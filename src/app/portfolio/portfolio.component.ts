@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
+	page = {
+		title: 'Portfolio',
+    subtitle: 'Portfolio',
+    content: 'Portfolio content.',
+    image: 'assets/mastering.jpg'
+	}
+
   constructor() { }
 
   ngOnInit(): void {

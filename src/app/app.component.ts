@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
+
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +10,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'voieAlterno';
+  title = 'Voie alternatif';
+  constructor(public router: Router) {
+	}
+
+	isShown(){
+	  console.log(this.router.url);
+	} 
 }

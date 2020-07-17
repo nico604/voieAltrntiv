@@ -5,11 +5,14 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './crew.component.html',
   styleUrls: ['./crew.component.sass']
 })
+
 export class CrewComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
+  
 }

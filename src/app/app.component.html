@@ -1,44 +1,50 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  
+<div class="row">
 <div id="navOuter">
     
     <div id="nav">
       <ul>
         
         <li>
-          <a routerLink=""  href="#">ACTUALITÉS</a>
+          <a routerLink=""    href="#">ACTUALITÉS</a>
         </li>
 
         <li>
-          <a routerLink="/portfolio" href="#">PORTFOLIO</a>
+          <a routerLink="/portfolio" routerLinkActive="active-link" href="#">PORTFOLIO</a>
         </li>
 
         <li>
-          <a routerLink="/crew" href="#">LE COLLECTIF</a>
+          <a routerLink="/crew" routerLinkActive="active-link" href="#">LE COLLECTIF</a>
         </li>
         
         <li>
-          <a routerLink="/evenements" href="#">ÉVENEMENTS</a>
+          <a routerLink="/evenements" routerLinkActive="active-link" href="#">ÉVENEMENTS</a>
         </li>
 
         <li>
-          <a routerLink="/contact" routerLinkActive="active">CONTACT</a>
+          <a routerLink="/contact" routerLinkActive="active-link">CONTACT</a>
         </li>
-
-        
 
       </ul>
     </div>
 
 </div>
-
+</div>
+<div class="row">
 <div class="fnfn" id="topVoie" style="text-align:center">
   <h1>
       {{ title }}
   </h1>  
-  <img width="100" alt="VoieAlternative.org • Digtal Arts Collective" src="assets/va_stamp.png">
+  <img *ngIf="isShown" width="100" alt="VoieAlternative.org • Digtal Arts Collective" src="assets/va_stamp.png">
 </div>
+</div>
+</div>
+<div class="container">
 
 <router-outlet>
- 
+  
 
 </router-outlet>
+</div> 

@@ -8,6 +8,12 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { CrewComponent } from './crew/crew.component';
 import { EvenementsComponent } from './evenements/evenements.component';
 import { ContactComponent } from './contact/contact.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { AlertModule } from 'ngx-bootstrap/alert';
 
 @NgModule({
   declarations: [
@@ -16,13 +22,23 @@ import { ContactComponent } from './contact/contact.component';
     PortfolioComponent,
     CrewComponent,
     EvenementsComponent,
-    ContactComponent
+    ContactComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatGridListModule,
+    AlertModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+
+export class AppModule {
+
+}
