@@ -1,9 +1,19 @@
 <div class="row">
 	
-<div class="col-md-6">
-	<img src="assets/mastering.jpg" width="100px">      <!-- uses 6 columns on medium and larger screens... -->
+<div class="col-md-2">
+	<h1>VA roster</h1>
 </div>
-<div class="col-md-6">      <!-- uses 12 columns on smaller than medium screens -->
-	<img src="assets/mastering.jpg" width="100px">      <!-- uses 6 columns on medium and larger screens... -->
+<div id="artists" class="col-md-10">      <!-- uses 12 columns on smaller than medium screens -->
+
+	<ul>
+		<li class="artists" *ngFor="let artist of artists">
+			<a [routerLink]="['/crew',artist.artistID ]">{{artist.name}} 
+
+				<img src='{{artist.src}}'>
+				<h1>{{artist.name}}</h1>
+			</a>	
+		</li>	
+	</ul>
+
 </div>
 </div>

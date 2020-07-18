@@ -5,11 +5,13 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { CrewComponent } from './crew/crew.component';
 import { EvenementsComponent } from './evenements/evenements.component';
 import { ContactComponent } from './contact/contact.component';
+import { ArtistDetailComponent} from './artist-detail/artist-detail.component';
 
 const routes: Routes = [
 	{ path: '', component: HomeComponent },
 	{ path: 'portfolio', component: PortfolioComponent },
 	{ path: 'crew', component: CrewComponent },
+	{ path: 'crew/:id', component: ArtistDetailComponent},	
 	{ path: 'evenements', component: EvenementsComponent },
 	{ path: 'contact', component: ContactComponent }
 ];

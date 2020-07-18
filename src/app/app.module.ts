@@ -14,6 +14,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { AlertModule } from 'ngx-bootstrap/alert';
+import { ArtistDetailComponent } from './artist-detail/artist-detail.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { AlertModule } from 'ngx-bootstrap/alert';
     CrewComponent,
     EvenementsComponent,
     ContactComponent,
+    ArtistDetailComponent,
     
   ],
   imports: [
