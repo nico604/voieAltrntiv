@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { AlertModule } from 'ngx-bootstrap/alert';
 import { ArtistDetailComponent } from './artist-detail/artist-detail.component';
+import { CarouselModule } from "ngx-bootstrap/carousel";
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ArtistDetailComponent } from './artist-detail/artist-detail.component';
     MatButtonModule,
     MatToolbarModule,
     MatGridListModule,
-    AlertModule.forRoot()
+    AlertModule.forRoot(),
+    CarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

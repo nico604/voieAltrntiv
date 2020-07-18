@@ -12,12 +12,10 @@ export class CrewComponent implements OnInit {
 
 	artists:Artist[];
 
-
   constructor(private artisteService:ArtistService) { }
-	//artists = ARTISTS;
+
   ngOnInit() {
   	this.artists=this.artisteService.getArtists();
   }
-
 
 }

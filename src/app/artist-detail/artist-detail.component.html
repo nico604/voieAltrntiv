@@ -1,10 +1,18 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a (click)="onBack()" >Artistes</a></li>
+    <li class="breadcrumb-item active" aria-current="page">{{artist.name}}</li>
+  </ol>
+</nav>
+
+<div>
+	<h3>{{artist.name}}</h3>
+	<a class='btn btn-default' (click)="onBack()">Retour </a>
+</div>
+
  
-<h3>Page détails de {{artist.name}}</h3>
- 
- 
-Artiste : {{artist.name}}
-image : {{ artist.src}}
+<img src="{{artist.persona}}" width="200px">
+<p class="bio">text: {{artist.bio}}</p>
 <p>
-    <a class='btn btn-default' (click)="onBack()">Retour </a>
 </p>
  
