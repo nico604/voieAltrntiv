@@ -8,6 +8,40 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+ 
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+
+<script>
+  if (window.FB && window.FB.init) {
+    window.FB.init({ status: true, xfbml: true, version: 'v7.0' });
+  } else {
+    window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '229188828097160',
+      xfbml      : true,
+      version    : 'v7.0'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+   // original FB SDK script login goes here
+  }
+
+
+
+</script>
 	  <app-root></app-root>
 	  <footer>
 	  	<h6>DIGITALEMENT VÔTRE</h6>
@@ -18,25 +52,5 @@
 <button onclick='FB.AppEvents.logEvent("buttonClicked")'>
   Click me
 </button>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '{229188828097160}',
-      cookie     : true,
-      xfbml      : true,
-      version    : '{v7.0}'
-    });
-      
-    FB.AppEvents.logPageView();   
-      
-  };
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
 </html>

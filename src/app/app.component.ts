@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-
-
-
+import * as myGlobals from 'globals';
 
 @Component({
   selector: 'app-root',
