@@ -1,6 +1,11 @@
  <div id="coreContent">
-    
-  <div id="socialContent">
+  <div>
+    <p></p>
+    <button class="btn" (click)="toggleAnimation()">HIT ME</button>
+    <button class="btn" (click)="toggleLogo()">HIT ME2</button>
+
+  </div>    
+  <div id="socialContent" [@triggyName]="myAnim ? 'open' : 'closed'">
       <ul>
 
         <li>
@@ -60,3 +65,4 @@
       <p><strong>Voie Alternative</strong> est un collectif multidisciplinaire agissant comme incubateur & diffuseur des arts numériques et de la culture émergente, aussi appelé contre-culture. Depuis des années, nous facilitons l'accessibilité aux nouvelles technologiques et l’expérimentation audio-visuelle grâce à des rassemblements festifs et nocturne, à prix modique, et ainsi promouvoir le phénomène de la culture numérique et de la musique électronique au Québec, au Canada et partout ailleurs dans le monde.</p>              
       </div>
 </div>
+

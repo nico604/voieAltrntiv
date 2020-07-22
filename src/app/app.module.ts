@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
@@ -29,8 +31,16 @@ import { CarouselModule } from "ngx-bootstrap/carousel";
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
+    RouterModule.forRoot([
+      { path: '', component: HomeComponent, data: {animation:'Home'}  },
+      { path: 'portfolio', component: PortfolioComponent, data: {animation:'Portfolio'} },
+      { path: 'crew', component: CrewComponent, data: {animation:'Crew'} },
+      { path: 'crew/:id', component: ArtistDetailComponent},  
+      { path: 'evenements', component: EvenementsComponent },
+      { path: 'contact', component: ContactComponent }
+    ], {useHash: true}),
+
     MatCardModule,
     MatButtonModule,
     MatToolbarModule,
@@ -38,6 +48,7 @@ import { CarouselModule } from "ngx-bootstrap/carousel";
     AlertModule.forRoot(),
     CarouselModule.forRoot()
   ],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })
