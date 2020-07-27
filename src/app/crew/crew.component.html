@@ -10,9 +10,8 @@
 	<ul>
 		<li class="artists" *ngFor="let artist of artists">
 			<a [routerLink]="['/crew',artist.artistID ]">
-
-				<img src='{{artist.src}}'>
 				<h1>{{artist.name}}</h1>
+				<img src='{{artist.persona}}' width="200px">
 			</a>	
 		</li>	
 	</ul>

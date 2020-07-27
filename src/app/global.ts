@@ -1,8 +1,6 @@
 
 'use strict';
 
-declare global {
-    interface Window {
-        FB: any;
-    }
+export interface window{
+  FB: any;
 }
