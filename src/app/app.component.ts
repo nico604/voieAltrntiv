@@ -22,7 +22,7 @@ import * as myGlobals from 'globals';
 })
 
 export class AppComponent  implements OnInit {
-  title = 'Voie alternative';
+  title = 'Est. Circa 2013';
   constructor() {
 	}
 
