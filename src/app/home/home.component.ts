@@ -6,6 +6,9 @@ import { Router } from '@angular/router';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.sass'],
 })
+
+//const initialData = window.__INITIAL_DATA__;
+
 export class HomeComponent implements OnInit {
 
   constructor() { }
@@ -15,5 +18,6 @@ export class HomeComponent implements OnInit {
   allo(){
   	console.log("hallo");
   }
-
 }
+const initialData = (window as any).__INITIAL_DATA__;
+console.log(initialData);
