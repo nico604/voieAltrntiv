@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
@@ -9,11 +10,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { CrewComponent } from './crew/crew.component';
 import { EvenementsComponent } from './evenements/evenements.component';
 import { ContactComponent } from './contact/contact.component';
-import { MatCardModule } from '@angular/material/card';
-import { MatButtonModule } from '@angular/material/button';
-import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatGridListModule } from '@angular/material/grid-list';
 import { AlertModule } from 'ngx-bootstrap/alert';
 import { ArtistDetailComponent } from './artist-detail/artist-detail.component';
 import { CarouselModule } from "ngx-bootstrap/carousel";
@@ -32,6 +29,7 @@ import { CarouselModule } from "ngx-bootstrap/carousel";
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, data: {animation:'Home'}  },
       { path: 'portfolio', component: PortfolioComponent, data: {animation:'Portfolio'} },
@@ -40,11 +38,6 @@ import { CarouselModule } from "ngx-bootstrap/carousel";
       { path: 'evenements', component: EvenementsComponent },
       { path: 'contact', component: ContactComponent }
     ], {useHash: true}),
-
-    MatCardModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatGridListModule,
     AlertModule.forRoot(),
     CarouselModule.forRoot()
   ],

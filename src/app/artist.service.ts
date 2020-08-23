@@ -1,13 +1,36 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable, throwError } from 'rxjs';
+import { catchError, retry } from 'rxjs/operators';
 import { Artist } from './artist';
-//import { ARTISTS 	} from './data';
+
+export interface User{
+  nom: string; 
+  pseudo: string; 
+  bio: string; 
+  info: string; 
+  link: string; 
+  url: string; 
+  avatar: string; 
+  photos: string; 
+  social: string; 
+  extra: string; 
+  id: number; 
+}
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class ArtistService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  configUrl = 'http://webvaps.lumberjacks-records.com/public/';
+  
+  getMysq(){
+    return this.http.get(this.configUrl);
+  }
 
   public getArtists(){
   	let artists:Artist[];

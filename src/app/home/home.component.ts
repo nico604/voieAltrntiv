@@ -12,12 +12,6 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
 
   constructor() { }
-  ngOnInit(): void {
-
-  }
-  allo(){
-  	console.log("hallo");
-  }
+  ngOnInit(): void {}
 }
-const initialData = (window as any).__INITIAL_DATA__;
-console.log(initialData);
+

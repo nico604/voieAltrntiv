@@ -5,12 +5,9 @@ import {
   style,
   animate,
   transition,
-  // ...
 } from '@angular/animations';   
 import { RouterOutlet } from '@angular/router';
 import { slideInAnimation } from "./animations";
-
-import * as myGlobals from 'globals';
 
 @Component({
   selector: 'app-root',
@@ -22,9 +19,10 @@ import * as myGlobals from 'globals';
 })
 
 export class AppComponent  implements OnInit {
+
   title = 'Est. Circa 2013';
-  constructor() {
-	}
+
+  constructor() {}
 
 	prepareRoute(outlet: RouterOutlet) {
   	console.log(outlet.activatedRouteData);

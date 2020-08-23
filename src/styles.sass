@@ -51,7 +51,6 @@ h1
 
 #navOuter #nav ul 
   height: auto
-  display: inline-flex
   margin-top: 0.5em
 
 #navOuter #nav ul li 
@@ -73,7 +72,6 @@ h1
 
 
 #coreContent, #aboutUs
-  max-width: 80%
   margin: 0 auto
   text-align: center
   font-family: "Montserrat", sans-serif
@@ -98,9 +96,6 @@ h1
 
 #aboutUs
   text-align: center  
-  min-width: 500px
-  max-width: 66%
-  margin: 0 auto
   padding: 0 0.3em 0 0.3em
   margin-bottom: 2em
   margin-top: -15px
@@ -185,7 +180,6 @@ h1
 footer 
   margin:0 auto
   padding-top: 0
-  max-width:52%
   height: 50px
   color: #c3dac9
   border-top: 2px dashed #f7f7f74d
@@ -212,3 +206,16 @@ h6
 
 #coreContent svg path:visited
   fill: #343432
+
+@media (max-width: 768px) 
+  #aboutUs
+    display: none
+@media (max-width: 768px)
+  h6
+    font-size: initial
+@media (min-width: 2000px)
+  #navOuter > #nav > ul > li > a
+    font-size: 4em
+  #navOuter
+    height: 5em
+    
