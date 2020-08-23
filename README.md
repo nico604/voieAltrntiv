@@ -1,3 +1,14 @@
+# Voie Alternative
+Ceci est le repo pour le projet de site web pour le collectif Voie Alternative, de Québec. 
+
+Le projet est en court de développement.
+
+Un service web pour les données est également en cours de construction.
+
+
+
+
+
 # VoieAlterno
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
